@@ -22,11 +22,11 @@
                     <h2>Captcha | CumulusCloud</h2>
                     <p>Vérification Anti-Robot.</p>
 
-                    <!-- Template Erreur
-                    <div class="captcha error">
+                    <!-- Template Erreur-->
+                    <div class="captcha error" id="error-div">
+                        <a onclick="hideElement('error-div')"><i class="fas fa-times-circle"></i></a>
                         <p>Une erreur est survenue,<br />merci de recompléter le captcha.</p>
                     </div>
-                    -->
 
                     <div class="captcha recaptcha">
                         <form class="captcha form" method="POST">
@@ -42,4 +42,10 @@
         </div>
     </main>
 </body>
+<script>
+    function hideElement(string) {
+        document.getElementById(string).className = "hidden";
+        return true;
+    }
+</script>
 </html>

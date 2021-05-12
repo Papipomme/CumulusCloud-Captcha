@@ -34,11 +34,21 @@ body {
     margin-top: 20px;
 }
 .captcha.error {
+    text-align: left;
+    padding: 10px;
     background-color: lightcoral;
     border: 2px solid #e35555;
     font-size: 12px;
-    margin: 5px;
+    margin: 2px;
     border-radius: 20px;
+}
+.captcha > .error > a {
+    cursor: pointer;
+    float: right;
+    margin: 10px;
+}
+.hidden {
+    display: none;
 }
 .captcha.recaptcha > form > button {
     background: linear-gradient(60deg, #4f46e5 0%, #0085d3 100%);
